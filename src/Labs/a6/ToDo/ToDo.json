@@ -1,0 +1,17 @@
+[
+  {
+    "done":"true",
+    "name":"Buy milk",
+    "status":"Completed"
+  },
+
+  {
+    "done":"false",
+    "name":"Buy eggs",
+    "status":"Yet to"
+  },
+  { "name": "Walk the dog",
+    "status": "DEFERRED",
+    "done": false
+  }
+]

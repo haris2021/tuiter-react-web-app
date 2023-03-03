@@ -1,0 +1,57 @@
+
+.wd-rightcolimg
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.wd-rightcolcontent
+{
+    display: block;
+    font-weight: normal;
+}
+
+.wd-btn
+{
+    border-radius: 60px !important;
+    margin-right:10px !important;
+    padding-right:14px !important;
+    margin-top:10px !important;
+
+}
+
+.wd-wholecontainer
+{
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 1px;
+
+}
+
+.wd-eachrow
+{
+    padding:20px;
+}
+
+.wd-username
+{
+    font-weight: normal;
+}
+
+.wd-list
+{
+    border-style: solid!important;
+    border-width: 1px!important;
+    border-color:lightgrey!important;
+    margin-bottom: -10px;
+
+}
+
+.wd-firstrow
+{
+    font-weight: bold!important;
+    font-size: 15px;
+    padding:0.5rem!important;
+
+}

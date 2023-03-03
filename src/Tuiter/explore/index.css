@@ -1,0 +1,303 @@
+
+.wd-row1
+{
+    margin-top:25px;
+}
+
+.wd-myname
+{
+    font-weight: bold;
+    font-size: small;
+}
+
+.wd-icon
+{
+    color:white;
+    text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+}
+
+
+.wd-searchicon
+{
+    position: absolute;
+    margin-top:8px;
+    margin-left:14px;
+}
+.wd-searchbox
+{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: rgba(23,12,24,0.07);
+    width: 100%;
+    padding: 5px 5px 5px 60px;
+}
+
+
+
+.wd-searchrow
+{
+    margin-bottom: 10px;
+}
+
+.wd-rocketimage
+{
+    width: 100%;
+    margin-top:10px;
+    display: block;
+
+}
+
+.wd-rightcolimg
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.wd-rightcolcontent
+{
+    display: block;
+}
+
+.wd-btn
+{
+    border-radius: 60px !important;
+    margin-right:10px !important;
+    padding-right:14px !important;
+    margin-top:10px !important;
+
+}
+
+.wd-btn1
+{
+    border-radius: 60px !important;
+    margin-top:10px !important;
+    padding:6px !important;
+
+}
+
+.wd-div1
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.wd-divimage
+{
+    width: 100px;
+    height:100px;
+    padding:3px;
+    border-radius:20px;
+    margin-left: 25px;
+}
+
+.wd-heading1
+{
+    color: grey;
+    font-size: small;
+}
+
+.wd-heading2
+{
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.wd-heading3
+{
+    font-size: small;
+    font-weight: bold;
+
+}
+.wd-heading4
+{
+    font-size: small;
+    color: grey;
+}
+
+.wd-content
+{
+    display: flex;
+    flex-direction: column;
+    padding-left:15px;
+}
+
+.wd-heading2
+{
+    padding-left:15px;
+
+}
+
+.wd-contentdiv
+{
+    padding-top:10px;
+}
+
+@media (max-width: 767px){
+
+    .wd-divimage
+    {
+        margin-left:1px;
+    }
+
+    .wd-titlebelowimg
+    {
+        position: absolute;
+        color: white;
+        font-weight: bolder;
+        font-size: 23px;
+        padding-left: 5px;
+        bottom: 355px;
+    }
+
+    .wd-gearicon
+    {
+        color:dodgerblue;
+        text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+        margin-left:25px;
+        margin-top:6px;
+        font-size: 30px !important;
+
+    }
+
+    .wd-myname
+    {
+        width: 25%;
+        font-size: small;
+    }
+
+
+
+}
+
+
+@media (min-width: 768px)
+and (max-width: 991px){
+
+    .wd-divimage
+    {
+        margin-left:1px;
+    }
+
+    .wd-titlebelowimg
+    {
+        position: absolute;
+        color: white;
+        font-weight: bolder;
+        font-size: 24px;
+        padding-left: 5px;
+        bottom: 280px;
+    }
+    .wd-gearicon
+    {
+        color:dodgerblue;
+        text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+        margin-left:21px;
+        margin-top:6px;
+        font-size: 30px !important;
+    }
+
+}
+
+@media (min-width: 992px)
+and (max-width: 1199px){
+
+    .wd-divimage
+    {
+        margin-left: 2px;
+
+    }
+
+    .wd-titlebelowimg
+    {
+        position: absolute;
+        color: white;
+        font-weight: bolder;
+        font-size: 24px;
+        padding-left: 5px;
+        bottom: 280px;
+    }
+
+    .wd-btn
+    {
+        margin-right:60px!important;
+    }
+    .wd-gearicon
+    {
+        color:dodgerblue;
+        text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+        margin-left:25px;
+        margin-top:6px;
+        font-size: 30px !important;
+
+    }
+    .wd-myname
+    {
+        width: 19%;
+        font-size: small;
+    }
+
+
+}
+
+@media (min-width: 1200px)
+and (max-width: 1400px){
+
+    .wd-divimage
+    {
+        margin-left: 13px;
+    }
+
+    .wd-titlebelowimg
+    {
+        position: absolute;
+        color:white;
+        font-weight: bolder;
+        font-size: 24px;
+        padding-left: 5px;
+        bottom: 260px;
+    }
+
+    .wd-gearicon
+    {
+        color:dodgerblue;
+        text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+        margin-left:25px;
+        margin-top:6px;
+        font-size: 30px !important;
+
+    }
+}
+
+@media (min-width: 1401px )
+{
+    .wd-divimage
+    {
+        margin-left: 15px;
+    }
+
+    .wd-titlebelowimg
+    {
+        position: absolute;
+        color: white;
+        font-weight: bolder;
+        font-size: 24px;
+        padding-left: 5px;
+        bottom: 320px;
+    }
+
+    .wd-gearicon
+    {
+        color:dodgerblue;
+        text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+        margin-left:25px;
+        margin-top:6px;
+        font-size: 30px !important;
+
+    }
+
+}

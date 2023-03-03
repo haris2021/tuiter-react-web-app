@@ -1,0 +1,39 @@
+
+.wd-row1
+{
+    margin-top:20px;
+}
+
+.wd-icon
+{
+    color:dodgerblue!important;
+    text-shadow: -1px 0 #000, 0 1px #000000, 1px 0 #000, 0 -1px #000;
+    margin-right:10px;
+    font-size: 25px !important;
+    font-weight: bolder;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+
+.wd-searchrow
+{
+    margin-bottom: 10px;
+}
+
+.wd-btn1
+{
+    border-radius: 60px !important;
+    margin-top:10px !important;
+    padding:6px !important;
+    font-weight: bold!important;
+
+}
+
+.wd-list
+{
+    margin-top:10px;
+}

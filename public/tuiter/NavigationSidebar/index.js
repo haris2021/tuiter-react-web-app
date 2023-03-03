@@ -1,4 +1,6 @@
 
+import "./index.css"
+
 const NavigationBar = ( active ) =>
 {
 
