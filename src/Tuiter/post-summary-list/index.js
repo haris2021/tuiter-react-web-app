@@ -5,7 +5,7 @@ const PostSummaryList = ( ) =>
 {
     return(
 
-         <div>
+         <div className="list-group" >
              {
                      PostInfo.map( (info,index) =>
 
