@@ -6,10 +6,9 @@ const Labs = ( ) => {
 
     return(
         <div>
-                {/*<Classes/>
-                <ConditionalOutput/>*/}
+                <Classes/>
+                <ConditionalOutput/>
                 <Assignment6/>
-                <h1>ToDo</h1>
                 <ToDoItem/>
         </div>
     );

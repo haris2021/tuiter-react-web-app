@@ -11,7 +11,7 @@ function explorescreen ( )
                <div class="row mt-2">
 
                            <div class="col-2 col-md-2 col-lg-2 col-xl-2">
-                                   ${NavigationSidebar("explore")}
+                                   ${NavigationSidebar()}
                            </div>
                            
                            <div class="col-8 col-lg-6 col-xl-6">

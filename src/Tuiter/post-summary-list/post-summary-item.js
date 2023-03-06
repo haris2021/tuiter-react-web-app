@@ -18,7 +18,7 @@ const PostSummaryItem = (
 
              <div className="list-group-item">
 
-                 <div className="row wd-eachrow-postsummary">
+                 <div className="row wd-check">
 
                      <div className="col-xl-9 col-lg-9 col-md-9 col-sm-8 wd-contentdiv">
 

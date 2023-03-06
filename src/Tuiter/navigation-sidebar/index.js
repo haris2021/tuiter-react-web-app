@@ -24,7 +24,7 @@ const NavigationSidebar = () =>
                 <FaHome className="wd-icon"/><span className="d-none d-xl-inline">Home</span>
             </Link>
 
-            <Link to="explore" className={`list-group-item list-group-item-action list-group-item wd-listcolor ${active === 'Explore' ? 'active' : ''}`}>
+            <Link to="explore" className={`list-group-item list-group-item-action list-group-item wd-listcolor ${active === 'explore' ? 'active' : ''}`}>
                 <FaHashtag className="wd-icon"/><span className="d-none d-xl-inline">Explore</span>
             </Link>
 
@@ -32,9 +32,14 @@ const NavigationSidebar = () =>
               <FaBell className="wd-icon"/><span className="d-none d-xl-inline">Notifications</span>
             </Link>
 
-            <Link to="messages"className={`list-group-item list-group-item-action wd-listcolor ${active === 'messages' ? 'active' : ''}`}>
+            <Link to="messages" className={`list-group-item list-group-item-action wd-listcolor ${active === 'messages' ? 'active' : ''}`}>
                 <SlEnvolopeLetter className="wd-icon"/> <span className="d-none d-xl-inline">Messages</span>
             </Link>
+
+            <Link to="/" className={`list-group-item list-group-item-action wd-listcolor ${active === 'labs' ? 'active' : ''}`}>
+                <SlEnvolopeLetter className="wd-icon"/> <span className="d-none d-xl-inline">Labs</span>
+            </Link>
+
 
             <a href="index.html"
                className="list-group-item list-group-item-action wd-listcolor ${active === 'bookmarks' ? 'active' : ''}">

@@ -1,7 +1,15 @@
 import "./index.css"
 import ImageOnly from "./ImageOnly.js";
 import ImageContent from "./ImageContent.js"
-import {FaCheckCircle, FaFileExport, FaGratipay, FaRegComment, FaSync} from "react-icons/fa";
+import {
+    FaCheckCircle,
+    FaFileExport,
+    FaGratipay,
+    FaRegComment,
+    FaRetweet,
+    FaSync
+} from "react-icons/fa";
+import {FiHeart, FiUpload} from "react-icons/fi";
 
 const PostList = ({post} ) =>
 {
@@ -25,10 +33,10 @@ const PostList = ({post} ) =>
 
                 { post.thread ? <span>{post.thread}</span> : " "}
 
-                <FaRegComment size={20} className="wd-icons-links"/> <span className="wd-num">22</span>
-                <FaSync size={20} className="wd-icons-links"/> <span className="wd-num">20</span>
-                <FaFileExport size={20} className="wd-icons-links"/> <span className="wd-num">20</span>
-                <FaGratipay size={20} className="wd-icons-links"/> <span className="wd-num">10</span>
+                <FaRegComment size={15} className="wd-icons-links"/> <span className="wd-num">22</span>
+                <FaRetweet size={20} className="wd-icons-links"/> <span className="wd-num">20</span>
+                <FiHeart size={15} className="wd-icons-links"/> <span className="wd-num">20</span>
+                <FiUpload size={15} className="wd-icons-links"/> <span className="wd-num">10</span>
 
             </div>
 

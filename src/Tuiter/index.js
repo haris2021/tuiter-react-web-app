@@ -7,7 +7,6 @@ import {Route, Routes} from "react-router";
 import {BrowserRouter} from "react-router-dom";
 
 function Tuiter() {
-    console.log("inside tuiter");
     return(
 
         <div className="row mt-2">
@@ -19,8 +18,10 @@ function Tuiter() {
             <div className="col-10 col-md-10 col-lg-7 col-xl-6">
 
                     <Routes>
-                       <Route path="explore" element={<ExploreComponent/>}></Route>
-                       <Route path="home" element={<Home/>}></Route>
+                           <Route index element={<ExploreComponent/>}></Route>
+                           <Route path="explore" element={<ExploreComponent/>}></Route>
+                           <Route path="home" element={<Home/>}></Route>
+                           <Route path="/" element={<labs/>}></Route>
                    </Routes>
 
             </div>
