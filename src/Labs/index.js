@@ -1,15 +1,23 @@
 import Assignment6 from "./a6/index.js";
-import Classes from "./a6/classes/index.js";
-import ConditionalOutput from "./a6/conditional-output/index.js";
-import ToDoItem from "./a6/ToDo/ToDo-item.js";
+
+import Nav from "../nav.js"
+import {Route, Routes} from "react-router";
+import Assignment7 from "./a7/index.js";
+import Tuiter from "../Tuiter/index.js"
 const Labs = ( ) => {
+
+    console.log("inside labs");
 
     return(
         <div>
-                <Classes/>
-                <ConditionalOutput/>
-                <Assignment6/>
-                <ToDoItem/>
+
+                            <Routes>
+
+                                     <Route path="/" element={<Assignment6/>}> </Route>
+
+
+                            </Routes>
+
         </div>
     );
 }

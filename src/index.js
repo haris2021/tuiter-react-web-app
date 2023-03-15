@@ -8,6 +8,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Qwe from "./App"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log("inside index.js");
+
 root.render(
   <React.StrictMode>
     <App />
