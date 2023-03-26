@@ -288,13 +288,13 @@ and (max-width: 1400px){
     {
         position: absolute;
         margin-top:420px;
-        margin-left:464px;
+        margin-left:504px;
 
     }
     .wd-profileusername
     {
         display: block;
-        margin-top:520px;
+        margin-top:560px;
     }
 
 }
