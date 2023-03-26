@@ -264,6 +264,30 @@ and (max-width: 1400px){
 
 @media (min-width: 1401px )
 {
+    .wd-coverpicture
+    {
+        width: 550px;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+    }
 
+    .wd-profileicture
+    {
+        width: 10%;
+        height:17%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:350px;
+        margin-left:10px;
+    }
+
+    .wd-editbtn
+    {
+        position: absolute;
+        margin-top:400px;
+        margin-left:434px;
+
+    }
 }
 
