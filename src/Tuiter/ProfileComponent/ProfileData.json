@@ -1,0 +1,17 @@
+[
+  {
+    "_id": 1,
+    "firstName": "Jose",
+    "lastName": "Annunziato",
+    "handle": "@jannunzi",
+    "profilePicture": "https://assets.vogue.in/photos/5f3a37acac1b7909f36d6814/2:3/w_2560%2Cc_limit/Mahendra%2520Singh%2520Dhoni%2520fun%2520facts.jpg",
+    "bannerPicture": "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg",
+    "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.",
+    "website": "youtube.com/webdevtv",
+    "location": "Boston, MA",
+    "dateOfBirth": "7/7/1968",
+    "dateJoined": "01/4/2009",
+    "followingCount": 349,
+    "followersCount": 223
+  }
+]

@@ -51,10 +51,9 @@ const NavigationSidebar = () =>
                 <FaList className="wd-icon"/><span className="d-none d-xl-inline">Lists</span>
             </a>
 
-            <a href="../profile.html"
-               className=" list-group-item list-group-item-action wd-listcolor ${active === 'profile' ? 'active' : ''}">
+            <Link to="profile" className={`list-group-item list-group-item-action wd-listcolor ${active === 'profile' ? 'active' : ''}`}>
                <FaUserAlt className="wd-icon"/><span className="d-none d-xl-inline">Profile</span>
-            </a>
+            </Link>
 
             <a className="  list-group-item list-group-item-action wd-listcolor ${active === 'more' ? 'active' : ''}">
                 <RiInformationFill className="wd-icon"/><span className="d-none d-xl-inline" href="#">More</span>

@@ -36,7 +36,6 @@ const PostSummaryItem = (
                  </div>
 
              </div>
-
          </div>
      );
 }

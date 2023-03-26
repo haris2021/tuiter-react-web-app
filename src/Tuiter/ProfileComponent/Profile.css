@@ -1,0 +1,227 @@
+
+.wd-topprofilename
+{
+    position: fixed;
+    margin-left: 40px;
+}
+
+.wd-nooftweets
+{
+    display: block;
+    margin-left:57px;
+    font-size: small;
+}
+
+.wd-coverpicture
+{
+    width: 42%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+}
+
+.wd-profileicture
+{
+    width: 10%;
+    height:17%;
+    border-radius: 80%;
+    position: absolute;
+    margin-top:350px;
+    margin-left:10px;
+}
+
+.wd-editbtn
+{
+    background-color: red;
+    position: absolute;
+    margin-top:400px;
+    margin-left:434px;
+
+}
+
+.wd-profileusername
+{
+    display: block;
+    margin-top:500px;
+}
+
+.wd-bio
+{
+    display: block;
+    margin-top:10px;
+    color:grey;
+    font-weight: normal;
+}
+
+.wd-threecoldiv
+{
+    padding-top:10px;
+
+}
+
+.wd-followersfollowingdiv
+{
+    margin-top:16px;
+    font-weight: normal;
+}
+
+.wd-following
+{
+    font-weight: normal!important;
+    margin-right:90px;
+}
+
+.wd-followers
+{
+    font-weight: normal!important;
+}
+
+
+
+@media (max-width: 767px){
+
+    .wd-profileusername
+    {
+        display: block;
+        margin-top:420px;
+    }
+
+
+
+    .wd-coverpicture
+    {
+        width: 65%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+
+    }
+
+    .wd-profileicture
+    {
+        width: 10%;
+        height:10%;
+        border-radius: 90%;
+        position: absolute;
+        margin-top:300px;
+        margin-left:10px;
+    }
+
+    .wd-editbtn
+    {
+        background-color: red;
+        position: absolute;
+        margin-top:350px;
+        margin-left:390px;
+
+
+    }
+
+}
+
+
+@media (min-width: 768px)
+and (max-width: 991px){
+
+    .wd-coverpicture
+    {
+        width: 65%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+
+    }
+
+    .wd-profileicture
+    {
+        width: 10%;
+        height:13%;
+        border-radius: 90%;
+        position: absolute;
+        margin-top:390px;
+        margin-left:10px;
+    }
+
+    .wd-editbtn
+    {
+        background-color: red;
+        position: absolute;
+        margin-top:440px;
+        margin-left:490px;
+
+    }
+
+}
+
+@media (min-width: 992px)
+and (max-width: 1199px){
+
+    .wd-coverpicture
+    {
+        width: 45%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+
+    }
+
+    .wd-profileicture
+    {
+        width: 10%;
+        height:17%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:330px;
+        margin-left:10px;
+    }
+
+    .wd-editbtn
+    {
+        background-color: red;
+        position: absolute;
+        margin-top:400px;
+        margin-left:434px;
+
+    }
+
+
+}
+
+@media (min-width: 1200px)
+and (max-width: 1400px){
+
+    .wd-coverpicture
+    {
+        width: 42%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+    }
+
+    .wd-profileicture
+    {
+        width: 10%;
+        height:17%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:350px;
+        margin-left:10px;
+    }
+
+    .wd-editbtn
+    {
+        background-color: red;
+        position: absolute;
+        margin-top:400px;
+        margin-left:434px;
+
+    }
+
+
+}
+
+@media (min-width: 1401px )
+{
+
+}
+

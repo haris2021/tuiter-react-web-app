@@ -1,14 +1,24 @@
+/*
 import PostInfo from "./PostInfo.json";
+*/
+
+
+import {useSelector} from "react-redux";
 import PostList from "./PostList.js";
+import WhatsHappening from "./whats-happening.js";
+
 const Centercol = ( ) =>
 {
+    const Postinfo = useSelector(state => state.tuits);
+
     console.log("isnide home");
     return(
            <div>
+               <WhatsHappening/>
                {
-                   PostInfo.map( (postdata) =>
+                   Postinfo.map( (postdata) =>
 
-                       <PostList key = {postdata.key}
+                       <PostList key = {postdata._id}
                                  post = {postdata}
                        />
 

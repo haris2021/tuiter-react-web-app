@@ -1,16 +1,22 @@
 import PostSummaryItem from "./post-summary-item.js";
 import PostInfo from "./PostInfo.json";
 
+
+import {useSelector} from "react-redux";
+
+
 const PostSummaryList = ( ) =>
 {
+
+
     return(
 
          <div className="list-group" >
              {
-                     PostInfo.map( (info,index) =>
+                     PostInfo.map( (info) =>
 
                                      <PostSummaryItem
-                                         index = {info.id}
+                                         key = {info.id}
                                          post = {info}
                                      />
                      )

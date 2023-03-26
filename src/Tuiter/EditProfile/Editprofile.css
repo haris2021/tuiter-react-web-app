@@ -1,0 +1,218 @@
+.wd-savebtn
+{
+    float: right;
+    display: inline;
+}
+
+
+.wd-editprofile
+{
+    display: inline;
+    margin-left: 20px;
+}
+
+.wd-editcoverpicture
+{
+    width: 42%;
+    position: absolute;
+    margin-left: -120px;
+    margin-top:40px;
+}
+
+.wd-editprofileicture
+{
+    width: 10%;
+    height:17%;
+    border-radius: 80%;
+    position: absolute;
+    margin-top:350px;
+    margin-left:-100px;
+}
+
+.wd-textareadiv
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    display: block;
+    margin-top:486px;
+    height:90px;
+    border-radius: 10px;
+}
+
+.wd-textareadiv1 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    display: block;
+    margin-top:15px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.wd-label
+{
+    color: grey;
+    font-weight: bold;
+    display: block;
+    margin-left: 17px;
+    margin-top:5px;
+}
+
+.wd-textbox
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    margin-left: 10px;
+    height:50px;
+    box-sizing: border-box;
+    width: 97%;
+    padding:5px;
+}
+
+.wd-textbox:focus
+{
+    border-color: transparent;
+    outline: none;
+
+}
+.wd-profilebio
+{
+    width: 100%;
+    margin-bottom: 16px;
+    border-color: lightgrey;
+    display: block;
+}
+
+.wd-profiledob
+{
+    width: 100%;
+    border-color: lightgrey;
+    display: block;
+
+}
+.wd-profilewebsite
+{
+    margin-bottom: 16px;
+    border-color: lightgrey;
+    display: block;
+    width: 100%;
+}
+
+
+
+@media (max-width: 767px){
+
+
+    .wd-editcoverpicture
+    {
+        width: 55%;
+        position: absolute;
+        margin-left: -120px;
+        margin-top:40px;
+    }
+
+    .wd-editprofileicture
+    {
+        width: 10%;
+        height:12%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:290px;
+        margin-left:-100px;
+    }
+
+    .wd-textareadiv
+    {
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+        display: block;
+        margin-top:376px;
+        height:90px;
+        border-radius: 10px;
+    }
+
+
+}
+
+
+@media (min-width: 768px)
+and (max-width: 991px){
+
+    .wd-editcoverpicture
+    {
+        width: 58%;
+        position: absolute;
+        margin-left: -120px;
+        margin-top:40px;
+    }
+
+    .wd-editprofileicture
+    {
+        width: 10%;
+        height:17%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:350px;
+        margin-left:-100px;
+    }
+
+
+
+}
+
+@media (min-width: 992px)
+and (max-width: 1199px){
+
+    .wd-editcoverpicture
+    {
+        width: 46%;
+        position: absolute;
+        margin-left: -120px;
+        margin-top:40px;
+    }
+
+    .wd-editprofileicture
+    {
+        width: 10%;
+        height:17%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:350px;
+        margin-left:-100px;
+    }
+
+}
+
+@media (min-width: 1200px)
+and (max-width: 1400px){
+
+    .wd-editcoverpicture
+    {
+        width: 42%;
+        position: absolute;
+        margin-left: -120px;
+        margin-top:40px;
+    }
+
+    .wd-editprofileicture
+    {
+        width: 10%;
+        height:17%;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:350px;
+        margin-left:-100px;
+    }
+
+
+
+}
+
+@media (min-width: 1401px )
+{
+
+}
+
