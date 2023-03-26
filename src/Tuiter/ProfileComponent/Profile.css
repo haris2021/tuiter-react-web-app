@@ -11,6 +11,7 @@
     margin-left:57px;
     font-size: small;
 }
+/*
 
 .wd-coverpicture
 {
@@ -37,12 +38,13 @@
     margin-left:434px;
 
 }
+*/
 
-.wd-profileusername
+/*.wd-profileusername
 {
     display: block;
     margin-top:500px;
-}
+}*/
 
 .wd-bio
 {
@@ -292,7 +294,7 @@ and (max-width: 1400px){
     .wd-profileusername
     {
         display: block;
-        margin-top:480px;
+        margin-top:520px;
     }
 
 }
