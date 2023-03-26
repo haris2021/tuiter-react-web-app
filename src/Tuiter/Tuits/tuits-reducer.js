@@ -44,12 +44,17 @@ const tuitslice = createSlice({
         {
              let index = state.findIndex(tuits => tuits._id === action.payload);
              state.splice(index,1)
-
+        },
+        IncreaseLikes(state,action)
+        {
+            let index = state.findIndex(tuits => tuits._id === action.payload);
+            state[index].likes = state[index].likes +1;
         }
+
     }
 });
 
-export const {createTuit,deltweet} = tuitslice.actions
+export const {createTuit,deltweet,IncreaseLikes} = tuitslice.actions
 export default tuitslice.reducer
 
 

@@ -11,15 +11,24 @@ import {
 import {FiHeart, FiUpload} from "react-icons/fi";
 import {GrFormClose} from "react-icons/gr";
 
-import {deltweet} from "../Tuits/tuits-reducer";
+import {deltweet,IncreaseLikes} from "../Tuits/tuits-reducer";
+import {useState} from "react";
 
 const PostList = ({post} ) =>
 {
     const dispatch = useDispatch();
+    const[liked, setliked] = useState(false);
 
     const deletetweet = (id) =>{
         console.log(id);
         dispatch(deltweet(id));
+    }
+
+    const increaselikes= (id) =>
+    {
+        console.log("likes increases for"+id);
+        dispatch(IncreaseLikes(id));
+        setliked(true);
     }
 
 
@@ -44,7 +53,8 @@ const PostList = ({post} ) =>
 
                 <FaRegComment size={15} className="wd-icons-links"/> <span className="wd-num">{post.replies}</span>
                 <FaRetweet size={20} className="wd-icons-links"/> <span className="wd-num">{post.retuits}</span>
-                <FiHeart size={15} className="wd-icons-links"/> <span className="wd-num">{post.likes}</span>
+                <FiHeart size={15}  className={`wd-icons-links ${liked ? 'wd-icons-links-liked' : ''}`}
+                         onClick={()=>{increaselikes(post._id)}} /> <span className="wd-num">{post.likes}</span>
                 <FiUpload size={15} className="wd-icons-links"/>
 
             </div>

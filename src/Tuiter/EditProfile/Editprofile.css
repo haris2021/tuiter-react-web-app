@@ -100,14 +100,11 @@
     width: 100%;
 }
 
-
-
-@media (max-width: 767px){
-
+@media (max-width: 649px) {
 
     .wd-editcoverpicture
     {
-        width: 55%;
+        width: 450px;;
         position: absolute;
         margin-left: -120px;
         margin-top:40px;
@@ -115,11 +112,57 @@
 
     .wd-editprofileicture
     {
-        width: 10%;
-        height:12%;
+        height: 70px;
         border-radius: 80%;
         position: absolute;
         margin-top:290px;
+        margin-left:-100px;
+    }
+
+
+  /*  .wd-coverpicture
+    {
+        width: 450px;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+
+    }*/
+
+    .wd-textareadiv
+    {
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+        display: block;
+        margin-top:376px;
+        height:90px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 767px){
+
+
+    .wd-editcoverpicture
+    {
+        width: 430px;
+        position: absolute;
+        margin-left: -120px;
+        margin-top:40px;
+    }
+
+    .wd-editprofileicture
+    {
+        height: 80px;
+        border-radius: 80%;
+        position: absolute;
+        margin-top:280px;
         margin-left:-100px;
     }
 
@@ -129,7 +172,7 @@
         border-width: 1px;
         border-color: lightgrey;
         display: block;
-        margin-top:376px;
+        margin-top:386px;
         height:90px;
         border-radius: 10px;
     }
@@ -143,19 +186,18 @@ and (max-width: 991px){
 
     .wd-editcoverpicture
     {
-        width: 58%;
+        width: 570px;
         position: absolute;
         margin-left: -120px;
-        margin-top:40px;
+        margin-top:60px;
     }
 
     .wd-editprofileicture
     {
-        width: 10%;
-        height:17%;
+        height:100px;
         border-radius: 80%;
         position: absolute;
-        margin-top:350px;
+        margin-top:390px;
         margin-left:-100px;
     }
 
@@ -168,7 +210,7 @@ and (max-width: 1199px){
 
     .wd-editcoverpicture
     {
-        width: 46%;
+        width: 550px;
         position: absolute;
         margin-left: -120px;
         margin-top:40px;
@@ -176,8 +218,7 @@ and (max-width: 1199px){
 
     .wd-editprofileicture
     {
-        width: 10%;
-        height:17%;
+        height:100px;
         border-radius: 80%;
         position: absolute;
         margin-top:350px;
@@ -191,7 +232,7 @@ and (max-width: 1400px){
 
     .wd-editcoverpicture
     {
-        width: 42%;
+        width: 550px;
         position: absolute;
         margin-left: -120px;
         margin-top:40px;
@@ -199,15 +240,12 @@ and (max-width: 1400px){
 
     .wd-editprofileicture
     {
-        width: 10%;
-        height:17%;
+        height:120px;
         border-radius: 80%;
         position: absolute;
         margin-top:350px;
         margin-left:-100px;
     }
-
-
 
 }
 
