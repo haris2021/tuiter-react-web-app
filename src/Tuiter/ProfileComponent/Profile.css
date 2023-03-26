@@ -266,7 +266,7 @@ and (max-width: 1400px){
 {
     .wd-coverpicture
     {
-        width: 650px;
+        width: 600px;
         object-fit: cover;
         display: block;
         position: absolute;
@@ -286,8 +286,14 @@ and (max-width: 1400px){
     {
         position: absolute;
         margin-top:400px;
-        margin-left:434px;
+        margin-left:444px;
 
     }
+    .wd-profileusername
+    {
+        display: block;
+        margin-top:420px;
+    }
+
 }
 
