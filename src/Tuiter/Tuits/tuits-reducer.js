@@ -1,5 +1,21 @@
 import {createSlice} from "@reduxjs/toolkit";
+/*
 import tuits from "./Tuits.json"
+*/
+
+import {findTuitsThunk} from "../../Service/tuits-thunks.js";
+
+import {DeleteTuitThunk} from "../../Service/tuits-thunks.js";
+
+import {AddNewTuitThunk} from "../../Service/tuits-thunks.js"
+
+import {UpdateTuitThunk} from "../../Service/tuits-thunks.js"
+
+const initialStateoftuits = {
+    tuits: [],
+    loading: false
+}
+
 
 const CurrentUser ={
     "UserName":"Nasa",
@@ -22,8 +38,52 @@ const templateTuit = {
 const tuitslice = createSlice({
 
     name:'tuits',
-    initialState:tuits,
-    reducers: {
+    initialState:initialStateoftuits,
+
+                                  extraReducers: {
+                                      [findTuitsThunk.pending]:
+                                          (state) => {
+                                              state.loading = true
+                                              state.tuits = []
+                                          },
+                                      [findTuitsThunk.fulfilled]:
+                                          (state, { payload }) => {
+                                              state.loading = false
+                                              state.tuits = payload
+                                          },
+                                      [findTuitsThunk.rejected]:
+                                          (state, action) => {
+                                              state.loading = false
+                                              state.error = action.error
+                                          },
+                                      [DeleteTuitThunk.fulfilled]:
+                                          (state,{payload}) =>{
+                                            state.loading=false;
+                                            state.tuits = state.tuits.filter( t => t._id !== payload)
+                                          },
+                                      [AddNewTuitThunk.fulfilled]:
+                                          (state,{payload}) =>{
+
+                                          state.loading = false;
+                                          console.log("Inside reducer" + payload)
+                                          state.tuits.push(payload)
+                                          },
+                                      [UpdateTuitThunk.fulfilled]:
+                                          (state,{payload}) =>
+                                          {
+                                              state.loading=false;
+                                              let index = state.tuits.findIndex( (t) => t._id === payload._id);
+                                              console.log("Found tuit to be updated" + index);
+                                              state.tuits[index] = {
+                                                  ...state.tuits[index],
+                                                  ...payload
+                                              }
+                                          }
+
+
+                                  },
+
+                                  reducers: {
 
         createTuit(state,action)
         {

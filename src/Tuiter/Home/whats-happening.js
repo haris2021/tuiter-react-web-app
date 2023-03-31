@@ -4,7 +4,10 @@ import "./whats-happening.css"
 import {HiOutlineDocumentText} from "react-icons/hi";
 import {GrLocation} from "react-icons/gr";
 import {useDispatch} from "react-redux";
+
 import {createTuit} from "../Tuits/tuits-reducer.js";
+
+import {AddNewTuitThunk} from "../../Service/tuits-thunks.js"
 
 const WhatsHappening = ( ) =>
 {
@@ -21,10 +24,10 @@ const WhatsHappening = ( ) =>
         const newTuit = {
             tuit: whatshappening
         }
+
+        /*dispatch(createTuit(newTuit));*/
         console.log(newTuit);
-
-        dispatch(createTuit(newTuit));
-
+        dispatch(AddNewTuitThunk(newTuit));
     }
 
     return(

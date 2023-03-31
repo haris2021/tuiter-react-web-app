@@ -14,30 +14,44 @@ import {GrFormClose} from "react-icons/gr";
 import {deltweet,IncreaseLikes,DecreaseLikes} from "../Tuits/tuits-reducer";
 import {useState} from "react";
 
+
+import {DeleteTuitThunk} from "../../Service/tuits-thunks.js";
+import {UpdateTuitThunk} from "../../Service/tuits-thunks.js";
+import {BiDislike} from "react-icons/bi";
+
 const PostList = ({post} ) =>
 {
     const dispatch = useDispatch();
     const[liked, setliked] = useState(false);
 
     const deletetweet = (id) =>{
-        console.log(id);
-        dispatch(deltweet(id));
+        dispatch(DeleteTuitThunk(id));
     }
 
     const increaselikes= (id) =>
     {
-        console.log("likes increases for"+id);
-        if(liked)
-        {
-            dispatch(DecreaseLikes(id));
-            setliked(false);
-        }
-        else
-        {
-            dispatch(IncreaseLikes(id));
+           /* dispatch(IncreaseLikes(id));*/
+            console.log("Liked tuit is "+ id)
+            const newTuit = {
+                ...post,
+                likes: post.likes+1
+            }
+            console.log(newTuit);
+            dispatch(UpdateTuitThunk(newTuit));
             setliked(true);
-        }
 
+    }
+
+    const DislikeTweet = (tid) =>
+    {
+        console.log(tid);
+        console.log("Displaying Post" , post)
+        const newTuit = {
+            ...post,
+            dislikes: post.dislikes+1
+        }
+        console.log(newTuit);
+        dispatch(UpdateTuitThunk(newTuit));
     }
 
 
@@ -64,6 +78,7 @@ const PostList = ({post} ) =>
                 <FaRetweet size={20} className="wd-icons-links"/> <span className="wd-num">{post.retuits}</span>
                 <FiHeart size={15}  className={`wd-icons-links ${liked ? 'wd-icons-links-liked' : 'wd-icons-links '}`}
                          onClick={()=>{increaselikes(post._id)}} /> <span className="wd-num">{post.likes}</span>
+                <BiDislike size={15} onClick={()=>{DislikeTweet(post._id)}} className="wd-icons-links"/> <span className="wd-num">{post.dislikes}</span>
                 <FiUpload size={15} className="wd-icons-links"/>
 
             </div>

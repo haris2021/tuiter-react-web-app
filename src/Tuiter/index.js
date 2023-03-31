@@ -25,7 +25,7 @@ import tuitsReducer from "./Tuits/tuits-reducer.js";
 import profileReducer from "./ProfileComponent/ProfileReducer.js";
 
 const store = configureStore({
-                                 reducer: {who:whoReducer, tuits: tuitsReducer , profile:profileReducer} });
+                                 reducer: {who:whoReducer, tuitsData: tuitsReducer , profile:profileReducer} });
 
 
 
