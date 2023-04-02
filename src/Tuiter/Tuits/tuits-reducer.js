@@ -31,6 +31,7 @@ const templateTuit = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "dislikes" : 0,
     "status":false
 };
 
@@ -63,10 +64,16 @@ const tuitslice = createSlice({
                                           },
                                       [AddNewTuitThunk.fulfilled]:
                                           (state,{payload}) =>{
-
                                           state.loading = false;
-                                          console.log("Inside reducer" + payload)
-                                          state.tuits.push(payload)
+                                          console.log("Inside reducer" + {payload})
+                                              const newtuits = {
+                                                  ...templateTuit,
+                                                  ...payload
+                                              }
+                                              console.log("Inside reducer" + newtuits)
+
+                                              state.tuits.push(newtuits)
+
                                           },
                                       [UpdateTuitThunk.fulfilled]:
                                           (state,{payload}) =>

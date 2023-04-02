@@ -19,12 +19,9 @@ const WhatsHappening = ( ) =>
 
     const tuithandler = ( )=>
     {
-        console.log("tuit handler" + " " +whatshappening);
-
         const newTuit = {
             tuit: whatshappening
         }
-
         /*dispatch(createTuit(newTuit));*/
         console.log(newTuit);
         dispatch(AddNewTuitThunk(newTuit));
