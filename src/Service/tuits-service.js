@@ -22,7 +22,7 @@ export const CreateTuit = async (tuit) =>{
     const response  = await axios.post(Tuits_API, tuit)
     const newtuit = response.data;
     console.log("Thunk"+newtuit)
-    return tuit
+    return newtuit
 }
 
 export const DeleteTuit = async (tid) =>{

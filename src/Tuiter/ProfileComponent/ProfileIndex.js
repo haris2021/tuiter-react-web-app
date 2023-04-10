@@ -9,6 +9,8 @@ import {useSelector} from "react-redux";
 const ProfileIndex = ( ) =>
 {
     const ProfileData  = useSelector(state => state.profile);
+    console.log(ProfileData);
+
 
     return(
                 <div>

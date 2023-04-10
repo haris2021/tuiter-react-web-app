@@ -23,10 +23,9 @@ const Centercol = ( ) =>
 
     useEffect(() => {
         dispatch(findTuitsThunk())
-    }, [])
+    }, [dispatch])
 
 
-    console.log("isnide home");
     return(
            <div>
 

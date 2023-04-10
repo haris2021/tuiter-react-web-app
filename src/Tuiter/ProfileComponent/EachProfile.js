@@ -39,8 +39,8 @@ const EachProfile = ({profile}) =>
                     <span className="wd-topprofilename">{profile.firstName} {profile.lastName}</span>
                 <span className="wd-nooftweets">1244 Tweets</span>
 
-                   <img src={profile.bannerPicture} alt="cover-picture" className="wd-coverpicture"/>
-                    <img src={profile.profilePicture} alt="profile-picture" className="wd-profileicture"/>
+                   {<img src={profile.bannerPicture} alt="cover-picture" className="wd-coverpicture"/>}
+                 { <img src={profile.profilePicture} alt="profile-picture" className="wd-profileicture"/>}
 
                     <button type="button" className="btn btn-secondary wd-editbtn" onClick={()=>{editbutton(profile._id)}}>Edit Profile</button>
 

@@ -18,21 +18,30 @@ const initialStateoftuits = {
 
 
 const CurrentUser ={
-    "UserName":"Nasa",
-    "Handle":"Nase@",
-    "image":"https://i.pinimg.com/originals/62/4d/f0/624df0abe304bb27a03407b47b3317d9.png"
+    "UserName":"The Boring Company",
+    "Handle":"@boringcompany",
+    "image":"../../Images/Tesla.png"
 };
 
 const templateTuit = {
     ...CurrentUser,
-    "topic": "Space",
+  /*  "topic": "Space",
     "time": "2h",
     "liked": false,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
     "dislikes" : 0,
-    "status":false
+    "status":false,*/
+
+   "likes" :0,
+   "liked" :false,
+    "topic" : "Traffic",
+    "time": "2h",
+    "title" :"The Boring Company fixing traffic",
+    "replies": 0,
+    "dislikes": 0,
+    "retuits" : 0
 };
 
 
@@ -66,7 +75,7 @@ const tuitslice = createSlice({
                                           (state,{payload}) =>{
                                           state.loading = false;
                                           console.log("Inside reducer" + {payload})
-                                              const newtuits = {
+                                             const newtuits = {
                                                   ...templateTuit,
                                                   ...payload
                                               }

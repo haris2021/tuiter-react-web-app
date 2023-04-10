@@ -3,6 +3,7 @@ import profiledata from "./ProfileData.json"
 
 const ProfileSlice = createSlice({
 
+
     name:'profile',
     initialState:profiledata,
     reducers:{
